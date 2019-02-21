@@ -137,7 +137,7 @@ JSON标识 | 英语注释 | 中文注释 | 备注
 {"fc":"Function_Code",  "did":"Device_Unique_id", "id":"Unique_id"}
 {"fc":"da", "dt":"2", "id":"0001"}
 ```
-* 修改地址（Lite发送到上位机）
+* 删除地址（Lite发送到上位机）
 ```json
 {"s":"Status_Code"}
 {"s":"200"}，{"s":"400"}
