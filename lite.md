@@ -5,13 +5,13 @@ JSON标识 | 英语注释 | 中文注释 | 备注
 :---|:---|:---|:---
 **d** | Device | 设备种类 | 1:DLT645 2: Modbus TCP
 **fc** | Function Code | 功能码 |读ff，新写rr, 修改mm，删除dd
-**f** | DeviceFrom | 读取远程设备的地址 |
-**t** | DeviceTo | 存储本地Lite的地址 |
+**f** | fromAddress | 读取远程设备的地址 |
+**t** | toAddress | 存储本地Lite的地址 |
 **ip** | IpFrom | 读取设备的ip:socket:device_id |
 
 ## 格式
 ```json
-{"d":"1", "fc":"ff","f":"fromAddress","t":"localAddress"}
+{"d":"1", "fc":"ff","f":"fromAddress","t":"toAddress"}
 ```
 
 ## 列子
