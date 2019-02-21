@@ -8,6 +8,8 @@ JSON标识 | 英语注释 | 中文注释 | 备注
 **f** | fromAddress | 读取远程设备的地址 |
 **t** | toAddress | 存储本地Lite的地址 |
 **ip** | IpFrom | 读取设备的ip:socket:device_id |
+**s** | Status | 通讯状态 | OK:200 Erorr:400
+
 
 ## 格式
 ```json
@@ -32,5 +34,5 @@ JSON标识 | 英语注释 | 中文注释 | 备注
 3. Lite将DeviceFrom与DeviceTo配对存储到本地数据库或文件
 4. Lite将数据传回给上位机，JSON如下:
 ```json
-{"d":"1","fc":"ff","f":"20188888888","t":"41001"}
+{"s":"200","t":"41001"}
 ```
