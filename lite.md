@@ -4,6 +4,7 @@
 JSON标识 | 英语注释 | 中文注释 | 备注
 :---|:---|:---|:---
 **id** | Unique_ID | 地址编号 |
+**did** | Device_Unique_ID | 设备编号 |
 **d** | Device_type | 设备种类 | 1:DLT645 2: Modbus TCP
 **fc** | Function_Code | 功能码 |读rr，新写地址pa,新写设备pd,修改地址ma，修改设备md，删除地址da，删除设备dd
 **f** | fromAddress | 读取远程设备的地址 |
@@ -46,11 +47,11 @@ JSON标识 | 英语注释 | 中文注释 | 备注
 ```
 * 新增设备（Lite发送到上位机）
 ```json
-{"s":"Status_Code", "id":"Device_Unique_id"}
+{"s":"Status_Code",  "did":"Device_Unique_id"}
 ```
 * 修改设备（上位机发送到Lite）
 ```json
-{"fc":"Function_Code", "id":"Device_Unique_id", "ip":"ip_address:socket:device_id"}
+{"fc":"Function_Code", "did":"Device_Unique_id", "ip":"ip_address:socket:device_id"}
 ```
 * 修改设备（Lite发送到上位机）
 ```json
@@ -58,7 +59,7 @@ JSON标识 | 英语注释 | 中文注释 | 备注
 ```
 * 删除设备（上位机发送到Lite）
 ```json
-{"fc":"Function_Code", "id":"Device_Unique_id"}
+{"fc":"Function_Code", "did":"Device_Unique_id"}
 ```
 * 删除设备（Lite发送到上位机）
 ```json
@@ -67,7 +68,7 @@ JSON标识 | 英语注释 | 中文注释 | 备注
 
 * 新增地址（上位机发送到Lite）
 ```json
-{"fc":"Function_Code", "d":"Device_Type", "id":"Device_Unique_id", "f":"fromAddress"}
+{"fc":"Function_Code", "d":"Device_Type", "did":"Device_Unique_id", "f":"fromAddress"}
 ```
 * 新增地址（Lite发送到上位机）
 ```json
@@ -75,7 +76,7 @@ JSON标识 | 英语注释 | 中文注释 | 备注
 ```
 * 修改地址（上位机发送到Lite）
 ```json
-{"fc":"Function_Code", "id":"Device_Unique_id", "id":"Unique_id", "f":"fromAddress"}
+{"fc":"Function_Code", "did":"Device_Unique_id", "id":"Unique_id", "f":"fromAddress"}
 ```
 * 修改地址（Lite发送到上位机）
 ```json
@@ -83,7 +84,7 @@ JSON标识 | 英语注释 | 中文注释 | 备注
 ```
 * 删除地址（上位机发送到Lite）
 ```json
-{"fc":"Function_Code",  "id":"Device_Unique_id", "id":"Unique_id"}
+{"fc":"Function_Code",  "did":"Device_Unique_id", "id":"Unique_id"}
 ```
 * 修改地址（Lite发送到上位机）
 ```json
