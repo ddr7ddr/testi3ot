@@ -50,8 +50,8 @@ JSON标识 | 英语注释 | 中文注释 | 备注
 
 * 新增地址（上位机发送到Lite）
 ```json
-{"fc":"Function_Code", "dt":"Device_Type", "fa":"fromAddress"}
-{"fc":"pa", "dt":"1", "fa":"060504030201"}
+{"fc":"Function_Code", "dt":"Device_Type", "did":"Device_Unique_id", "fa":"fromAddress"}
+{"fc":"pa", "dt":"1", "did":"1001", "fa":"060504030201"}
 ```
 * 新增地址（Lite发送到上位机）
 ```json
@@ -60,8 +60,8 @@ JSON标识 | 英语注释 | 中文注释 | 备注
 ```
 * 修改地址（上位机发送到Lite）
 ```json
-{"fc":"Function_Code", "dt":"Device_Type", "id":"Unique_id", "fa":"fromAddress"}
-{"fc":"ma", "dt":"1", "id":"0001", "fa":"070504030207"}
+{"fc":"Function_Code", "dt":"Device_Type", "did":"Device_Unique_id", "id":"Unique_id", "fa":"fromAddress"}
+{"fc":"ma", "dt":"1", "did":"1001", "id":"0001", "fa":"070504030207"}
 ```
 * 修改地址（上位机发送到Lite）
 ```json
@@ -70,8 +70,8 @@ JSON标识 | 英语注释 | 中文注释 | 备注
 ```
 * 删除地址（上位机发送到Lite）
 ```json
-{"fc":"Function_Code", "dt":"Device_Type", "id":"Unique_id"}
-{"fc":"da", "dt":"1", "id":"0001"}
+{"fc":"Function_Code", "dt":"Device_Type", "did":"Device_Unique_id", "id":"Unique_id"}
+{"fc":"da", "dt":"1", "did":"1001", "id":"0001"}
 ```
 * 删除地址（上位机发送到Lite）
 ```json
@@ -115,7 +115,7 @@ JSON标识 | 英语注释 | 中文注释 | 备注
 * 新增地址（上位机发送到Lite）
 ```json
 {"fc":"Function_Code", "dt":"Device_Type", "did":"Device_Unique_id", "fa":"fromAddress"}
-{"fc":"pa", "dt":"2", "fa":"16:40001:2"}
+{"fc":"pa", "dt":"2", "did":"2001", "fa":"16:40001:2"}
 ```
 * 新增地址（Lite发送到上位机）
 ```json
@@ -124,8 +124,8 @@ JSON标识 | 英语注释 | 中文注释 | 备注
 ```
 * 修改地址（上位机发送到Lite）
 ```json
-{"fc":"Function_Code", "did":"Device_Unique_id", "id":"Unique_id", "fa":"fromAddress"}
-{"fc":"ma", "dt":"2", "id":"0001", "fa":"16:40011:2"}
+{"fc":"Function_Code", "dt":"Device_Type", "did":"Device_Unique_id", "id":"Unique_id", "fa":"fromAddress"}
+{"fc":"ma", "dt":"2", "did":"2001", "id":"0001", "fa":"16:40011:2"}
 ```
 * 修改地址（Lite发送到上位机）
 ```json
@@ -134,8 +134,8 @@ JSON标识 | 英语注释 | 中文注释 | 备注
 ```
 * 删除地址（上位机发送到Lite）
 ```json
-{"fc":"Function_Code",  "did":"Device_Unique_id", "id":"Unique_id"}
-{"fc":"da", "dt":"2", "id":"0001"}
+{"fc":"Function_Code",  "dt":"Device_Type", "did":"Device_Unique_id", "id":"Unique_id"}
+{"fc":"da", "dt":"2", "did":"2001","id":"0001"}
 ```
 * 删除地址（Lite发送到上位机）
 ```json
