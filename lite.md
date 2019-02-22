@@ -168,3 +168,12 @@ JSON标识 | 英语注释 | 中文注释 | 备注
 6 | Write Single Holding Register | 预置单寄存器
 15| Write Multiple Coils | 强置多线圈
 16| Write Multiple Holding Registers | 预置多寄存器
+
+## DLT645地址
+名称 | Measurement Type | 地址
+:---|:---|:---
+电压 | PHASE_A_VOLTAGE | 0x02010100
+电流 | PHASE_A_CURRENT | 0x02020100
+频率 | METER_FREQUENCY | 0x02800002
+功率因数 | PHASE_TOTAL_POWER_FACTOR | 0x02060000
+电能 | POSITIVE_ACTIVE_TOTAL_ENERGY | 0x00000000
