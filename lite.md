@@ -1,16 +1,16 @@
 # 上位机与Lite通讯JSON文档
 
 ## 说明
-JSON标识 | 英语注释 | 中文注释 | 备注
-:---|:---|:---|:---
-**id** | Unique_ID | 地址编号 |
-**did** | Device_Unique_ID | 设备编号 |
-**dt** | Device_type | 设备种类 | 1:DLT645 2: Modbus TCP
-**fc** | Function_Code | 功能码 |读rr，新写地址pa, 新写设备pd, 修改地址ma，修改设备md，删除地址da，删除设备dd
-**fa** | fromAddress | 读取远程设备的地址 |
-**ta** | toAddress | 存储本地Lite的地址 |
-**dadd** | DeviceAddress | 读取设备的地址 | ModbusTCP:DeviceAddress Dlt645:12位编码
-**s** | Status_Code | 通讯状态 | OK:200 Erorr:400
+JSON标识 | 英语注释 | 中文注释 | 类型 |备注
+:---|:---|:---|:---|:---
+**id** | Unique_ID | 地址编号 | 整型 |
+**did** | Device_Unique_ID | 设备编号 | 整型 |
+**dt** | Device_type | 设备种类 | 整型 | 1:DLT645 2: Modbus TCP
+**fc** | Function_Code | 功能码 | 字符串 | 读rr，新写地址pa, 新写设备pd, 修改地址ma，修改设备md，删除地址da，删除设备dd
+**fa** | fromAddress | 读取远程设备的地址 | 字符串 |
+**ta** | toAddress | 存储本地Lite的地址 | 字符串 |
+**dadd** | DeviceAddress | 读取设备的地址 | 字符串 | ModbusTCP:DeviceAddress Dlt645:12位编码
+**s** | Status_Code | 通讯状态 | 整型 | OK:200 Erorr:400
 
 
 # Dlt645设备报文格式(JSON)
