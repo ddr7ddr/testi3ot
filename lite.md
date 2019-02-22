@@ -115,7 +115,7 @@ JSON标识 | 英语注释 | 中文注释 | 备注
 * 新增地址（上位机发送到Lite）
 ```json
 {"fc":"Function_Code", "dt":"Device_Type", "did":"Device_Unique_id", "fa":"fromAddress"}
-{"fc":"pa", "dt":"2", "fa":"40001:2"}
+{"fc":"pa", "dt":"2", "fa":"16:40001:2"}
 ```
 * 新增地址（Lite发送到上位机）
 ```json
@@ -125,7 +125,7 @@ JSON标识 | 英语注释 | 中文注释 | 备注
 * 修改地址（上位机发送到Lite）
 ```json
 {"fc":"Function_Code", "did":"Device_Unique_id", "id":"Unique_id", "fa":"fromAddress"}
-{"fc":"ma", "dt":"2", "id":"0001", "fa":"40011:2"}
+{"fc":"ma", "dt":"2", "id":"0001", "fa":"16:40011:2"}
 ```
 * 修改地址（Lite发送到上位机）
 ```json
@@ -154,3 +154,17 @@ JSON标识 | 英语注释 | 中文注释 | 备注
 
 重复fromAddress的问题
 判断40001:2是否跟2的问题 左没有2 右有2
+
+
+## Modbus功能码
+
+功能码 | Register Type | 名称
+:---:|:---|:---
+1 | Read Coil | 读取线圈状态
+2 | Read Discrete Input | 读取输入状态
+3 | Read Holding Registers | 读取保持寄存器
+4 | Read Input Registers | 读取输入寄存器
+5 | Write Single Coil | 强置单线圈
+6 | Write Single Holding Register | 预置单寄存器
+15| Write Multiple Coils | 强置多线圈
+16| Write Multiple Holding Registers | 预置多寄存器

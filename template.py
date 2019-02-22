@@ -1,7 +1,7 @@
 import json
 import os
 
-def create_device_unique_id(device_address):
+def create_device_unique_id(device_type,device_address):
     # 创建一个device_unique_id
     # 然后存到Flash里
     # device_unique_id | device_address
@@ -9,7 +9,7 @@ def create_device_unique_id(device_address):
     # return device_unique_id
     pass
 
-def create_unique_id_to_address(from_address):
+def create_unique_id_to_address(device_type,from_address):
     # 创建一个unique_id
     # 创建一个lite modbus address
     # 然后存到Flash里
