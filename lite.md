@@ -18,15 +18,15 @@ JSON标识 | 英语注释 | 中文注释 | 类型 |备注
 标识 | 英语注释 | 中文注释 | 返回状态码OK | 返回状态码Error | 备注 
 :---|:---|:---|:---|:---|:---
 sf|Save_Flash|存入Lite设备Flash|200|400
-gd|Get_Device|读取目标设备地址|201|401
-gv|Get_Value|读取目标设备寄存器或线圈的值|202|402
-pv|Post_Value|写入目标设备寄存器或线圈的值|203|403
-pa|Post_Address|新增目标设备寄存器或线圈的地址|204|404
-pd|Post_Device|新增目标设备地址|205|405
-ma|Modify_Address|修改目标设备寄存器或线圈的地址|206|406
-md|Modify_Device|修改目标设备地址|207|407
-da|Delete_Address|删除目标设备寄存器或线圈的地址|208|408
-dd|Delete_Device|删除目标设备|209|409
+gd|Get_Device|读取目标设备地址|211|411
+gv|Get_Value|读取目标设备寄存器或线圈的值|212|412
+pv|Post_Value|写入目标设备寄存器或线圈的值|213|413
+pa|Post_Address|新增目标设备寄存器或线圈的地址|214|414
+pd|Post_Device|新增目标设备地址|215|415
+ma|Modify_Address|修改目标设备寄存器或线圈的地址|216|416
+md|Modify_Device|修改目标设备地址|217|417
+da|Delete_Address|删除目标设备寄存器或线圈的地址|218|418
+dd|Delete_Device|删除目标设备|219|419
 
 ## 通用报文格式(JSON)
 
