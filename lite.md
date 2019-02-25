@@ -7,7 +7,7 @@ JSON标识 | 英语注释 | 中文注释 | 类型 |备注
 **id** | Unique_ID | 地址编号 | 整型 |
 **did** | Device_Unique_ID | 设备编号 | 整型 |
 **dt** | Device_type | 设备种类 | 整型 | 1:DLT645 2: Modbus TCP
-**fc** | Function_Code | 功能码 | 字符串 | 读设备gd 读值gv 写值pv 新写地址pa 新写设备pd 修改地址ma 修改设备md 删除地址da 删除设备dd
+**fc** | Function_Code | 功能码 | 字符串 |如:gd gv pv pa pd ma
 **fa** | fromAddress | 读取远程设备的地址 | 字符串 |
 **ta** | toAddress | 存储本地Lite的地址 | 字符串 |
 **dadd** | DeviceAddress | 读取设备的地址 | 字符串 | ModbusTCP:DeviceAddress Dlt645:12位编码
